@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Generator</title>
-</head>
-<body>
-    
-</body>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- icon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Random Password Generator</h1>
+      <div class="password-container">
+        <div class="random-password"></div>
+        <div class="reload-img"><img src="https://www.svgrepo.com/show/487721/reload-ui.svg" alt="reload"></div>
+        <div class="check-password">
+            <h5>This Password is <span class="password-status">Low</span></h5>
+        </div>
+        <div class="copy-btn"><button><i class="ri-file-copy-line"></i>Copy Password</button></div>
+      </div>
+    </div>
+    <!-- javascript -->
+  </body>
 </html>
