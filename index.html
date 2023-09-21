@@ -16,17 +16,20 @@
     <div class="container">
       <h1>Random Password Generator</h1>
       <div class="password-container">
-        <div class="random-password">12354</div>
+        <div class="random-password"></div>
         <div class="reload-icon">
             <i class="ri-restart-line"></i>
         </div>
     </div>
         <div class="check-password">
-          <span>This Password is <span class="password-status">Low</span></span>
+          <span>This Password is <span class="password-status">Strong</span></span>
         </div>
-        <div class="btn-container">
-          <button id="copy-btn"><i class="ri-file-copy-line"></i>Copy Password</button>
-       
+         
+      <div class="range-container">
+        <input type="range" name="range" id="range" min="4" max="25" step="any">
+      </div>
+      <div class="pss-lenght">
+        <span class="pass-len">0</span>
       </div>
     </div>
     <!-- javascript -->

@@ -1,77 +1,87 @@
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html,body{
-width: 100%;
-height: 100%;
-}
-
-:root{
-    --primary-color:#023047;
-    --secondary-color:#fefae0;
-    --btn-color:#1982c4;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-body{
-    background-color:var(--primary-color) ;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+:root {
+  --primary-color: #023047;
+  --secondary-color: #fefae0;
+  --btn-color: #1982c4;
 }
-.container{
-  width: 50%;
-  height: 50%; 
+
+body {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 50%; 
   background-color: var(--secondary-color);
- display: flex;
- align-items: center;
- flex-direction: column;
- gap: 10px;
- border-radius: 10px;
- padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 10px;
+  padding: 10px ;
 }
 
-
-.container h1{
-    color: var(--btn-color);
+.container h1 {
+  color: var(--btn-color);
 }
-.password-container{
-    border: 1px solid var(--btn-color);
-    border-radius: 10px;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 5px;
-    margin: 15px 0px;
+.password-container {
+  border: 1px solid var(--btn-color);
+  border-radius: 10px;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 5px;
+  margin: 15px 0px;
 }
 
-
-.random-password{
-    width: 90%;
-    height: 100%;
-    text-align: start;
-    font-size: 1.3rem;
-    font-weight: 700;
+.random-password {
+  width: 90%;
+  height: 100%;
+  text-align: start;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
-.reload-icon{
+.reload-icon {
   font-size: 1.3rem;
+  cursor: pointer;
+
 }
 
-.check-password span{
-   font-size: 1.4rem;
+.reload-icon:active{
+    transform: rotate(120deg);
 }
 
-.btn-container{
-    padding: 10px 0px;
+.check-password span {
+  font-size: 1.4rem;
 }
 
-#copy-btn{
-    width: 300px;
-    font-size: 1.2rem;
-    padding: 10px 0px;
-    border-radius: 20px;
-    border: none;
-    background-color:var(--btn-color);
-    color: var(--secondary-color);
+.btn-container {
+  padding: 10px 0px;
+}
+ 
+ 
+ 
+
+#range {
+  width: 20rem;
+  cursor: pointer;
+}
+.pass-len {
+  font-size: 1.5rem;
+  color: var(--btn-color);
+}
+
+.password-status{
+    color: green;
 }
